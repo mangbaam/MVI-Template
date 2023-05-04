@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MVI Template</string>
+    <string name="seconds">%d초</string>
+</resources>
