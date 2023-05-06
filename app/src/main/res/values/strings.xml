@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">MVI Template</string>
+    <!-- Timer -->
     <string name="seconds">%d초</string>
+    <string name="search_button">찾기</string>
+
+    <!-- News Search -->
+    <string name="article_thumbnail_description">기사 섬네일 사진</string>
+    <string name="retry_button">재시도</string>
+    <string name="search_hint">키워드로 뉴스를 검색하세요</string>
+    <string name="no_result">검색 결과가 없습니다</string>
+    <string name="latest_keyword">검색어: %s</string>
 </resources>

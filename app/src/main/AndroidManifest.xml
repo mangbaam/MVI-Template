@@ -14,10 +14,6 @@
         android:theme="@style/Theme.MVITemplate"
         tools:targetApi="31">
         <activity
-            android:name=".sample.timer.MainActivity"
-            android:exported="true">
-        </activity>
-        <activity
             android:name=".sample.timer.MainMviActivity"
             android:exported="true">
             <intent-filter>
@@ -26,5 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".sample.newssearch.list.SearchActivity"
+            android:exported="true" />
     </application>
 </manifest>
