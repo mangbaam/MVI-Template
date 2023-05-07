@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".sample.newssearch.list.SearchActivity"
+            android:name=".sample.newssearch.ui.list.SearchActivity"
             android:exported="true" />
     </application>
 </manifest>

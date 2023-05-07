@@ -1,4 +1,4 @@
-package com.mangbaam.mvitemplate.sample.newssearch.list
+package com.mangbaam.mvitemplate.sample.newssearch.ui.list
 
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -21,7 +21,7 @@ class SearchActivity :
 
     private fun initViews() = with(binding) {
         rvArticles.adapter = adapter
-        btnSearch.setOnClickListener { viewModel.search(etSearch.text.toString()) }
+        btnSearch.setOnClickListener { viewModel.search() }
         btnRetry.setOnClickListener { viewModel.search() }
     }
 

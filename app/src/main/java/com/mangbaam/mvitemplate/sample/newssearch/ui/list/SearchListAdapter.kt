@@ -1,4 +1,4 @@
-package com.mangbaam.mvitemplate.sample.newssearch.list
+package com.mangbaam.mvitemplate.sample.newssearch.ui.list
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.mangbaam.mvitemplate.R
 import com.mangbaam.mvitemplate.databinding.ItemArticleBinding
-import com.mangbaam.mvitemplate.sample.newssearch.Article
+import com.mangbaam.mvitemplate.sample.newssearch.model.Article
 
 class SearchListAdapter : ListAdapter<Article, SearchListAdapter.ArticleViewHolder>(diffUtil) {
     class ArticleViewHolder(parent: ViewGroup) : RecyclerView.ViewHolder(
@@ -19,12 +19,7 @@ class SearchListAdapter : ListAdapter<Article, SearchListAdapter.ArticleViewHold
             false,
         ).root,
     ) {
-        private val binding = DataBindingUtil.inflate<ItemArticleBinding>(
-            LayoutInflater.from(parent.context),
-            R.layout.item_article,
-            parent,
-            false,
-        )
+        private val binding = DataBindingUtil.bind<ItemArticleBinding>(itemView) ?: error("")
 
         fun bind(article: Article) {
             binding.article = article

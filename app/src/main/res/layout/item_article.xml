@@ -7,7 +7,7 @@
 
         <variable
             name="article"
-            type="com.mangbaam.mvitemplate.sample.newssearch.Article" />
+            type="com.mangbaam.mvitemplate.sample.newssearch.model.Article" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
